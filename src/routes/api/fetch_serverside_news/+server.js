@@ -17,7 +17,7 @@ export async function GET() {
 		articles.push(getXMLArticles(DYNASTY_LEAGUE, processDynastyLeague));
 		articles.push(getXMLArticles(DYNASTY_NERDS, processDynastyNerds));
 	}
-    const responses = await waitForAll(...articles).catch((err) => { console.error(err); });
+    const responses = (await waitForAll(...articles).catch((err) => { console.error(err); })) ?? [];
 
 	let finalArticles = [];
 
@@ -29,26 +29,36 @@ export async function GET() {
 }
 
 const getXMLArticles = async(url, callback) => {
-    const res = await fetch(url, {compress: true}).catch((err) => { console.error(err); });
-    const text = await res.text().catch((err) => { console.error(err); });
+    try {
+        const res = await fetch(url, {compress: true});
+        const text = await res.text();
 
-    let xmlData;
-    if(XMLValidator.validate(text) === true){
-        const parser = new XMLParser();
-        xmlData = parser.parse(text);
+        let xmlData;
+        if(XMLValidator.validate(text) === true){
+            const parser = new XMLParser();
+            xmlData = parser.parse(text);
+        }
+        
+        return callback(xmlData.rss.channel.item);
+    } catch(err) {
+        console.error(`News feed unavailable, skipping: ${url}`);
+        return [];
     }
-    
-    return callback(xmlData.rss.channel.item);
 }
 
 const getJSONArticles = async (feed, callback) => {
-	const res = await fetch(feed, {compress: true}).catch((err) => { console.error(err); });
-	const data = await res.json().catch((err) => { console.error(err); });
-	
-	if (res.ok) {
-		return callback(data);
-	} else {
-		throw new Error(data);
+	try {
+		const res = await fetch(feed, {compress: true});
+		const data = await res.json();
+		
+		if (res.ok) {
+			return callback(data);
+		}
+		console.error(`News feed unavailable (${res.status}), skipping: ${feed}`);
+		return [];
+	} catch(err) {
+		console.error(`News feed unavailable, skipping: ${feed}`);
+		return [];
 	}
 }
 

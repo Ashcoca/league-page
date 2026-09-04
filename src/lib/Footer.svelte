@@ -6,7 +6,7 @@
 
 	let outOfDate = false;
 
-    let el, footerHeight;
+    let elNeedUpdate, el, footerHeight;
 
     let innerWidth;
 
