@@ -137,8 +137,6 @@
 		</ul>
 	</div>
 	<!-- PLEASE DO NOT REMOVE THE COPYRIGHT -->
-	<span class="copyright invisible">&copy; 2021 - {year} <a href="https://github.com/nmelhado/league-page">League Page</a></span>
-	<br />
 	<!-- PLEASE DO NOT REMOVE THE BUILT BY -->
-	<span class="creator invisible">Built by <a href="http://www.nmelhado.com/">Nicholas Melhado</a><br /></span>
+	<span class="creator invisible">Built by <a href="http://www.ashcoca.com/">Ash Coca</a><br /></span>
 </footer>
