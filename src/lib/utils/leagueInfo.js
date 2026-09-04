@@ -38,9 +38,9 @@ export const managers = [
     favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Doug Altman", // Can be anything (usually your rival's name)
-      link: 7, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/doug.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Andi Porter", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/andi.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 232, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "QB", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -60,9 +60,9 @@ export const managers = [
     favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Andi Porter", // Can be anything (usually your rival's name)
-      link: 8, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/andi.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Nate Totten", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/nate.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 421, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -77,15 +77,15 @@ export const managers = [
     tookOver: null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
     location: "Los Angeles", // (optional)
     bio:
-      "Coach Ashvin has two championship titles and has coached over 10 different franchies in the RCL, from Team Group Force 5 all the way up to Team Group Force 15. Who knows what team he'll be coaching 10 years from now!",
+      "Coach Ashvin has two championship titles and has coached over 10 different franchies in the RCL, from Team Group Force 5 all the way up to Team Group Force XX. Who knows what team he'll be coaching 10 years from now!",
     photo: "/managers/ashvin.png", // square ratio recommended (no larger than 500x500)
     fantasyStart: 2012, // (optional) when did the manager start playing fantasy football
     favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Nate Totten", // Can be anything (usually your rival's name)
-      link: 9, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/nate.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Wags", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/drew.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 2449, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "RB", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -96,18 +96,18 @@ export const managers = [
   },
   {
     roster: 4, // ID of the roster that the manager manages (look at the order of the power rankings graph)
-    name: "Cali Gilman",
-    tookOver: 2018, // (optional) used if a manager took over a team, delete this line or change to null otherwise
-    location: "Brooklyn", // (optional)
-    bio: "Coach Gilman entered the league to replace Coach Erik Lapointe. Gilman would go on to shock the world when she took the last place place team and won a championship in her first year, earning her the Coach of the Year award. Her birthday is March 3rd.",
-    photo: "/managers/cali.png", // square ratio recommended (no larger than 500x500)
-    fantasyStart: 2014, // (optional) when did the manager start playing fantasy football
-    favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
+    name: "Mitch",
+    tookOver: 2023, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+    location: "Detroit", // (optional)
+    bio: "Coach Mitch entered the league to replace Coach Gilman. who entered the league to replace Coach Erik Lapointe. Is this team cursed going through so many managers? Well, Coach Mitch is looking to break the curse and bring a championship to the franchise.",
+    photo: "/managers/mitch.png", // square ratio recommended (no larger than 500x500)
+    fantasyStart: 2023, // (optional) when did the manager start playing fantasy football
+    favoriteTeam: "det", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Kyle O'Neal", // Can be anything (usually your rival's name)
-      link: 4, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/kyle.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Dougie", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/doug.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 4034, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -123,13 +123,13 @@ export const managers = [
     location: "Los Angeles", // (optional)
     bio: "Coach Kyle entered the league to replace Coach Brandon Michael Ford of Wildfyre. After immediately rebranding the team, Coach Kyle of Team KyleHarrisonO'Neal began the long arduous journey of rebuilding the shattered franchise - to great success! His teams have consistently made the playoffs and have won two championships.",
     photo: "/managers/kyle.png", // square ratio recommended (no larger than 500x500)
-    fantasyStart: 2014, // (optional) when did the manager start playing fantasy football
+    fantasyStart: 2013, // (optional) when did the manager start playing fantasy football
     favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Dynasty", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Cali Gilman", // Can be anything (usually your rival's name)
-      link: 3, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/cali.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Chris Hurte", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/chris.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 4199, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -150,9 +150,9 @@ export const managers = [
     favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Chris Hurte", // Can be anything (usually your rival's name)
-      link: 6, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/chris.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Ash", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/ashvin.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 2505, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "QB", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -173,9 +173,9 @@ export const managers = [
     favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Drew Wagner", // Can be anything (usually your rival's name)
-      link: 5, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/drew.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Kyle O'Neil", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/kyle.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 240, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -196,9 +196,9 @@ export const managers = [
     favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Jordy Altman", // Can be anything (usually your rival's name)
-      link: 0, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/jordy.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Mitch", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/mitch.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 1466, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -218,9 +218,9 @@ export const managers = [
     favoriteTeam: "kc", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Rebuild", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Danny Shaw", // Can be anything (usually your rival's name)
-      link: 1, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/danny.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Jordy Altman", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/jordy.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 3198, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "TE", // (optional) Favorite position (QB, WR, RB, TE, etc.)
@@ -241,9 +241,9 @@ export const managers = [
     favoriteTeam: "min", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
     mode: "Dynasty", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
     rival: {
-      name: "Ashvin", // Can be anything (usually your rival's name)
-      link: 2, // manager array number within this array, or null to link back to all managers page
-      image: "/managers/ashvin.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+      name: "Danny Shaw", // Can be anything (usually your rival's name)
+      link: null, // manager array number within this array, or null to link back to all managers page
+      image: "/managers/danny.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
     },
     favoritePlayer: 4029, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
     valuePosition: "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
